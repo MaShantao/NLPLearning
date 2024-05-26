@@ -1,0 +1,20 @@
+{
+    "run_types":["train","test"],
+    "root_dir":"./surname_mlp",
+    "surname_csv": "./data/suername/surnames_with_splits.csv",
+    "vectorizer_file": "./surname_mlp/model_save/vectorizer.json",
+    "model_state_file": "./surname_mlp/model_save/model.pth",
+    "save_dir": "./surname_mlp/model_save",
+    "hidden_dims": [128,36],
+    "seed": 1337,
+    "num_epochs": 100,
+    "early_stopping_criteria": 5,
+    "learning_rate": 0.005,
+    "batch_size": 64,
+    "cuda": false,
+    "shuffle":false,
+    "drop_last":false,
+    "reload_from_files": false,
+    "expand_filepaths_to_save_dir": true,
+    "save_pig":"./surname_mlp/model_save/surname_mlp.jpg"
+}

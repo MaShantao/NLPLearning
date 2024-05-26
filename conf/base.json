@@ -1,0 +1,15 @@
+{
+    "surname_csv": "./data/suername/surnames_with_splits.csv",
+    "vectorizer_file": "vectorizer.json",
+    "model_state_file": "model.pth",
+    "save_dir": "./surname_mlp/model_save",
+    "hidden_dim": 300,
+    "seed": 1337,
+    "num_epochs": 100,
+    "early_stopping_criteria": 5,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "cuda": false,
+    "reload_from_files": false,
+    "expand_filepaths_to_save_dir": true
+}

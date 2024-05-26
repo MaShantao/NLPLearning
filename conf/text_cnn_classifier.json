@@ -1,0 +1,39 @@
+{
+    "run_types": [
+        "train",
+        "test"
+    ],
+    "root_dir": "./text_classifier/text_cnn",
+    "data_set":{
+        "data_path": "./data/thuc_news/",
+        "data_format":"tsv",
+        "train_name":"cnews.train.txt",
+        "val_name":"cnews.val.txt",
+        "test_name":"cnews.test.txt"
+    },
+    "stopwords_path":"./data/stopwords/hit_stopwords.txt",
+    "pretrained_name": "sgns.sogou.word",
+    "pretrained_path": "./data/sogou_news_chinese_vector",
+    "save_dir": "./text_classifier/text_cnn/stage_data",
+    "model_name":"text_cnn-cnews.pth",
+    "hidden_dims": [
+        128,
+        36
+    ],
+    "seed": 1337,
+    "num_epochs": 100,
+    "early_stopping_criteria": 5,
+    "learning_rate": 0.005,
+    "batch_size": 64,
+    "cuda": false,
+    "shuffle": false,
+    "drop_last": false,
+    "reload_from_files": false,
+    "expand_filepaths_to_save_dir": true,
+    "train_fig": "./surname_mlp/model_save/surname_mlp.jpg",
+    "dropout": 0.5,
+    "filter_sizes":[3,4,5],
+    "filter_num":16,
+    "optimizer":"Adam",
+    "loss_func":"CrossEntropyLoss"
+}
